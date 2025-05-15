@@ -64,7 +64,7 @@ function renderTransactions() {
     const row = document.createElement('tr');
 
     row.innerHTML = `
-      <td class="px-2 py-2 text-bold">${t.description}</td>
+      <td class="px-2 py-2 font-bold">${t.description}</td>
       <td class="px-2 py-2 text-green-600">${t.type}</td>
       <td class="px-2 py-2 text-yellow-800">${t.amount.toFixed(2)}</td>
       <td class="px-2 py-2">
