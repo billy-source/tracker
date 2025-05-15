@@ -57,6 +57,7 @@ function deleteTransaction(id) {
 }
 
 function renderTransactions() {
+    
   transactionList.innerHTML = '';
 
   transactions.forEach(t => {
@@ -70,6 +71,7 @@ function renderTransactions() {
         <button onclick="deleteTransaction(${t.id})" class="bg-red-500 text-white px-2 py-1 rounded">Delete</button>
       </td>
     `;
+    
 
     transactionList.appendChild(row);
   });
